@@ -1,0 +1,828 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+html {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    font-size: 15px;
+
+    
+}
+
+/* ------------------- Section Nav-Bar------------------ */
+
+.bg-dark{
+    background-color: #000000 !important;
+}
+
+.logo-nav{
+    height: 70px;
+    object-fit: contain;
+}
+
+
+/* ------------------- Section Accueil ------------------ */
+
+.bandeau-accueil {
+    min-width: 100% !important;
+    height: 900px; 
+    position: relative;
+    
+}
+
+.bandeau-accueil-background{
+    background: url(../ressources/photo/oleg-ivanov-5j5zOvecrkU-unsplash.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-width: 100%;
+    height: 100%;
+}
+
+.bandeau-acceuil-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.4) ;
+    z-index: 1;
+}
+
+
+.punch-line-1{
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding: 190px 0;
+    z-index: 2;
+    /* margin-left: 100px; */
+   
+}
+
+.bandeau-accueil .main-punch-line {
+  color: #fff;
+  font-size: 106px;
+  font-weight: 700;
+  /* text-align: center; */
+  text-transform: uppercase;
+  line-height: normal;
+  
+}
+
+.bandeau-accueil .author {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 400;
+    /* text-align: center; */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    
+}
+
+
+@media screen and (max-width: 775px) {
+    .bandeau-accueil .punch-line-1{
+        width: 100%;
+
+    }
+    .bandeau-accueil{
+        height: 800px;
+    }
+
+    .bandeau-accueil .main-punch-line{
+        font-size: 80px;
+    }
+    
+    
+    .bandeau-accueil .author, .span-MY, .span-TRAINER {
+        font-size: 18px;
+      
+        
+    }
+}
+@media screen and (max-width: 576px) {
+
+    .bandeau-accueil{
+        height: 600px;
+    }
+ 
+    .bandeau-accueil .punch-line-1{
+        padding: 130px 0 50px 0;
+    }
+    
+    .bandeau-accueil .main-punch-line {
+      font-size: 50px;
+     
+      
+    }
+    
+    .bandeau-accueil .author, .span-MY, .span-TRAINER {
+        font-size: 12px;
+
+        
+    }
+
+    .txt-top-container{
+        width: 70%;
+    }
+}
+
+
+
+
+
+
+/* ------------------- Setion Quote ------------------ */
+
+.quote-1{
+    width:100%; 
+    height: 200px;
+    background-color: #eb3643;
+    position: relative;
+}
+
+.quote-1 p {
+    color: white;
+    width: 80%;
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    /* padding: 10px; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+@media screen and (max-width: 775px){
+
+    .quote-1 p {
+        font-size: 20px;
+    }
+}
+
+/* ------------------- Setion A Propos ------------------ */
+
+
+.img-deco-1 img{
+    object-fit: cover;
+  
+    width: 100%;
+    min-height: 100%;
+    z-index: -99;
+}
+
+.a-propos{
+    background-color: #222222;
+    color: white;
+    
+}
+
+.conteneur-text-a-propos{
+    width: 80%;
+    /* margin-top: -60px; */
+
+}
+
+.propos-title{
+    text-transform: uppercase;
+    font-family: 'Anton';
+    letter-spacing: 2px;
+    font-size: 40px;
+    color: #464545;
+    /* margin-bottom: 25px; */
+    display: block;
+
+}
+
+.punch-line-vision{
+    font-style: italic;
+}
+
+.propos-name{
+    text-transform: uppercase;
+    font-family: 'Anton';
+    letter-spacing: 6px;
+    font-size: 40px;
+
+}
+
+@media screen and (max-width: 775px){
+
+    .img-deco-1-bis img{
+        
+        object-fit: cover;
+        width: 100%;
+        height: 40vh;
+        display: block;
+        margin: 10px auto;
+    }
+    .conteneur-text-a-propos{
+        width: 90%;
+        margin-top: 20px;
+        padding: 15px 0;
+    
+    }
+}
+
+/* ------------------- Section Training ------------------ */
+
+
+.training{
+    position: relative;
+    height: 850px; 
+    min-width: 100% !important;
+    display: flex;
+    justify-content: center;
+    
+}
+.training-background{
+
+    background: url(../ressources/photo/rachel-loughman-EjmcT09e3Jg-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.img-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;    
+    width: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 2;
+  
+}
+
+.training-container{
+    position: absolute;
+    top: 0;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 40px;
+    z-index: 3;
+}  
+
+.training-title{
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 10px;
+    font-size: 4rem;
+    text-transform: uppercase;
+    /* margin-top: 85px; */
+
+}
+
+.span-MY, .span-TRAINER{
+    color: #eb3643;
+}
+
+.training-steps{
+    /* width: 300px; */
+    width: 70%;
+    height: auto;
+    position: relative;
+    margin: 70px auto;
+}
+
+.numero-training span{
+    font-family: 'Anton', sans-serif;
+    font-size: 5rem;
+    color: #eb3643 ;
+}
+
+.training-step p{
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    top: 40%;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+    font-size: 1.1rem;
+
+}
+
+.services-content{
+    padding: 45px;
+}
+
+.div-entrainement{
+    border-right: 1px solid #fff ;
+    height: auto;
+}
+.services-text-content{
+    width: 80%;
+    
+}
+.services-text-content h2{
+    font-family: 'Anton', sans-serif;
+    color: #eb3643;
+
+}
+
+.button-services{
+    
+    display: block;
+    width: 180px;
+    height: 40px;
+    border: 1px solid #333;
+    text-decoration: none;
+    border-radius: 999px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    margin: 20px auto;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    background-color: #eb3643;
+    margin: 30px auto;
+}
+
+@media screen and (max-width: 922px ){
+    .training{
+        height: 880px;
+    }
+}
+
+@media screen and (max-width: 770px ){
+
+    .training{
+        height: 940px;
+    }
+    .training-title{
+       
+        letter-spacing: 8px;
+        font-size: 3rem;
+
+    
+    }
+    .div-entrainement{
+        border-right: none;
+        
+    }
+}
+@media screen and (max-width: 767px ){
+
+    .training{
+        height: 1040px;
+    }
+}
+
+@media screen and (max-width: 622px ){
+    .training{
+        height: 1100px;
+    }
+}
+
+@media screen and (max-width: 576px ){
+
+    .training-title{
+       
+        letter-spacing: 6px;
+        font-size: 2rem;
+
+    
+    }
+}
+@media screen and (max-width:498px ){
+    .training{
+        height: 1200px;
+    }
+}
+@media screen and (max-width:391px ){
+    .training{
+        height: 1280px;
+    }
+}
+
+/* ------------------- Section Avantages ---------- */
+
+.avantages{
+    background-color: #eb3643;
+    height: auto;
+}
+
+.avantages-container{
+    width: 80%;
+}
+.list-avantages{
+    width: 80%;
+}
+
+.list-avantages li{
+    list-style-type: none;
+}
+
+.list-item-header i{
+    font-size: 50px;
+}
+
+.list-item-container{
+    width: 210px;
+    margin-bottom: 50px;
+}
+
+
+
+/* ------------------- Section formules et Tarifs ---------- */
+.txt-formules-italic{
+    font-style: italic;
+}
+
+.formules-card{
+    background-color: #222222;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    /* z-index: -99; */
+}
+
+.container-tarifs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cartes-tarifs{
+    width: 350px;
+    height: auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    margin: 15px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+}
+.cartes-tarifs:hover{
+    position: relative;
+    transform: translateY(-5px);
+}
+
+.cartes-tarifs h4{
+    font-size: 30px;
+    padding: 25px 20px;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    background-color: #ffafbf;
+}
+.cartes-tarifs:nth-child(2) h4{
+    background-color: #ff5073;
+}
+.cartes-tarifs:nth-child(3) h4{
+    background-color: #ff0033;
+}
+.cartes-tarifs:nth-child(4) h4{
+    background-color: #ff1e00;
+}
+.cartes-tarifs:nth-child(5) h4{
+    background-color: #940000;
+}
+.cartes-tarifs:nth-child(6) h4{
+    background-color: #610000;
+}
+
+.cartes-tarifs span{
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-size: 45px;
+    font-weight: bold;
+
+}
+.cartes-tarifs small{
+    font-size: 12px;
+}
+
+.durée{
+    color: #eb3643;
+}
+
+.cartes-tarifs p{
+    font-size: 18px;
+    padding: 8px 15px;
+    /* border-top: 1px solid rgb(194,194,194); */
+
+}
+.cartes-tarifs p:first-of-type{
+    border:none;
+}
+.cartes-tarifs p:last-of-type{
+    /* border-bottom: 1px solid rgb(194,194,194); */
+}
+.cartes-tarifs p:nth-child(odd){
+    /* background-color: rgba(195,195,195,0.219); */
+}
+
+.cartes-tarifs a{ 
+    display: block;
+    width: 180px;
+    height: 40px;
+    border: 1px solid #333;
+    text-decoration: none;
+    border-radius: 999px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    margin: 20px auto;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    background-color: #eb3643;
+    margin: 30px auto;
+}
+.cartes-tarifs a:hover{
+    background-color: #fc1b2a;
+    color: #f1f1f1; 
+
+}
+
+@media screen and (max-width : 775px ){
+
+    .cartes-tarifs{
+        width: 250px
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .section-tarifs h3{
+        font-size: 30px;
+        margin: 80px 0 45px;
+        text-align: center;
+        padding: 0 10px;}
+
+    .section-tarifs hr{
+        width: 150px;
+        margin: 20px auto 30px;
+    }
+}
+
+/* ------------------- Section Parallax ------------------ */
+
+.parallax {
+    min-width: 100% !important;
+    height: auto;
+    background: url(../ressources/photo/rachel-loughman-EjmcT09e3Jg-unsplash.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: -998;
+    
+}
+
+/* ------------------- Section Temoignage ------------------ */
+
+
+.temoin-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color:rgba(221, 47, 56, 0.7) ;
+    z-index: -997;
+}
+.parallax h3 {
+    font-size: 45px;
+    color: #f1f1f1;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    font-weight: 900;
+    letter-spacing: 6px;
+}
+
+.temoignage-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.temoignage-cont div:nth-child(1){
+    border-top: none;
+}
+
+.temoignages-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+    width: 70%;
+    border-top: 0.4px solid #fff;
+
+}
+
+.temoignage{
+    font-size: 25px;
+    display: block;
+    padding: 15px 0;
+    margin-top: 30px;
+    letter-spacing: Opx;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #fff;
+    font-style: italic;
+
+
+}
+
+.temoin-name{
+    display: block;
+    padding: 5px 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    letter-spacing: 2px;
+
+}
+.temoin-sub{
+    color: white;
+    font-style: italic;
+    margin-top: -20px;
+}
+
+.temoin-date{
+    display: block;
+    color: #fff;
+    margin-bottom: 40px;
+
+}
+
+@media screen and (max-width: 775px){
+    .parallax h3 {
+        font-size: 3rem;
+        color: #f1f1f1;
+        margin-top: 80px;
+        margin-bottom: 60px;
+      
+        letter-spacing: 6px;
+    }
+}
+@media screen and (max-width: 576px){
+    .parallax h3 {
+        font-size: 2rem;
+        color: #f1f1f1;
+        margin-top: 80px;
+        margin-bottom: 60px;
+      
+        letter-spacing: 6px;
+    }
+}
+
+/* ------------------- Section Contact ------------------ */
+
+
+.contact{
+    background-color: #222222;
+    height: auto;
+    /* padding: 35px 35px; */
+    min-width: 100% !important;
+
+}
+
+.contact-explaination{
+    width: 85%;
+    margin: 0 auto;
+}
+.etape-contact-content{
+    width: 200px;
+}
+.etape-contact-content h5{
+    /* font-family: serif; */
+    margin-bottom: 20px;
+    color: #eb3643;
+    text-transform: uppercase;
+}
+
+.contact-content h3{
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+.contact-content p{
+    font-size: 14px;
+}
+
+.rs-list{
+    margin-top: 28px;
+}
+.rs-list li{
+    list-style: none;
+    margin-right: 22px;
+}
+
+.fab{
+    font-size: 28px;
+}
+.zone-contact{
+    width: 80%;
+}
+.contact-form{
+   width: 70%;
+}
+.contact-form h3{
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 5px;
+    display: block;
+    margin-bottom: 5px;
+   
+
+}
+
+.form-group input{
+    background-color: transparent;
+    border: 3px solid #fff;
+    margin-bottom: 8px;
+    border-radius: 0px;
+    color: white;
+   
+}
+.form-group textarea{
+    background-color: transparent;
+    border: 3px solid #fff;
+    height: 130px;
+    border-radius: 0px;
+
+}
+
+.form-control:hover{
+    background-color: #464545;
+}
+
+.form-control:focus{
+    background-color: transparent;
+    color: white;
+    border-color: #eb3643;
+    box-shadow: none;
+}
+.form-group textarea:focus{
+    background-color: transparent;
+
+}
+.form-group input:focus{
+    background-color: transparent;
+
+}
+
+.button-sub-contact-form{
+    border-radius: 0px;
+}
+
+
+@media screen and (max-width: 775px ){
+    .contact-form{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 575px ){
+    .etape-contact-content{
+        width: 250px;
+    }
+}
+
+/* ------------------- Section Footer ------------------ */
+
+
+.footer-content{
+    height: 300px;
+    background-color: #eb3643 ;
+}
+
+.link-bottom-footer li{
+    list-style-type: none;
+    mar
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 775px){
+
+}
