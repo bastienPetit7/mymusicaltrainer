@@ -1,0 +1,12 @@
+{% for rubrique,messages in app.flashes %}
+
+    {% for message in messages %}
+        <div class="w-50  message-flash" id="flash">
+            <div class="alert alert-{{ rubrique }} divAlert mb-0">
+                <i class="far fa-times-circle " id="closeBtn"></i>
+                <p class="mb-0 text-center ">{{ message }}</p><br/>
+            </div>
+        </div>
+    {% endfor %}
+
+{% endfor %}

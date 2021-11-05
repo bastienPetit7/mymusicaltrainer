@@ -36,7 +36,7 @@ html {
 }
 
 .bandeau-accueil-background{
-    background: url(../ressources/photo/oleg-ivanov-5j5zOvecrkU-unsplash.jpg);
+    background: url(../ressources/photo/Bandeau.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -54,6 +54,10 @@ html {
     z-index: 1;
 }
 
+.fa-times-circle{
+    font-size: 22px;
+    cursor: pointer;
+}
 
 .punch-line-1{
 
@@ -65,6 +69,10 @@ html {
     z-index: 2;
     /* margin-left: 100px; */
    
+}
+
+.span-MY, .span-TRAINER{
+    color: #eb3643;
 }
 
 .bandeau-accueil .main-punch-line {
@@ -103,7 +111,7 @@ html {
     
     
     .bandeau-accueil .author, .span-MY, .span-TRAINER {
-        font-size: 18px;
+        font-size: 20px;
       
         
     }
@@ -125,7 +133,7 @@ html {
     }
     
     .bandeau-accueil .author, .span-MY, .span-TRAINER {
-        font-size: 12px;
+        font-size: 18px;
 
         
     }
@@ -170,7 +178,7 @@ html {
     }
 }
 
-/* ------------------- Setion A Propos ------------------ */
+/* ------------------- Setion Notre Vision ------------------ */
 
 
 .img-deco-1 img{
@@ -188,17 +196,30 @@ html {
 }
 
 .conteneur-text-a-propos{
-    width: 80%;
+    width: 75%;
     /* margin-top: -60px; */
 
 }
+.conteneur-text-a-propos strong{
+   
+    font-size: 28px;
+ 
+ }
+
+.conteneur-text-a-propos p{
+   
+   font-size: 20px;
+
+}
+
+
 
 .propos-title{
     text-transform: uppercase;
     font-family: 'Anton';
-    letter-spacing: 2px;
-    font-size: 40px;
-    color: #464545;
+    letter-spacing: 4px;
+    font-size: 50px;
+    color: white;
     /* margin-bottom: 25px; */
     display: block;
 
@@ -232,6 +253,38 @@ html {
         padding: 15px 0;
     
     }
+    .propos-title{
+        font-size: 40px;
+    }
+    .conteneur-text-a-propos strong{
+        font-size: 24px;
+    
+     }
+    
+    .conteneur-text-a-propos p{
+       font-size: 16px;
+    
+    }
+}
+
+@media screen and (max-width: 576px){
+
+    .propos-title{
+        font-size: 30px;
+    }
+    .span-MY, .span-TRAINER{
+        font-size: 20px;
+    }
+    .conteneur-text-a-propos strong{
+        font-size: 20px;
+    
+     }
+    
+    .conteneur-text-a-propos p{
+       font-size: 14px;
+    
+    }
+
 }
 
 /* ------------------- Section Training ------------------ */
@@ -286,9 +339,7 @@ html {
 
 }
 
-.span-MY, .span-TRAINER{
-    color: #eb3643;
-}
+
 
 .training-steps{
     /* width: 300px; */
@@ -524,12 +575,7 @@ html {
 .cartes-tarifs p:first-of-type{
     border:none;
 }
-.cartes-tarifs p:last-of-type{
-    /* border-bottom: 1px solid rgb(194,194,194); */
-}
-.cartes-tarifs p:nth-child(odd){
-    /* background-color: rgba(195,195,195,0.219); */
-}
+
 
 .cartes-tarifs a{ 
     display: block;
@@ -558,6 +604,21 @@ html {
     .cartes-tarifs{
         width: 250px
     }
+    .cartes-tarifs h4{
+        font-size: 24px;
+    }
+    .cartes-tarifs span{
+        font-size: 38px;
+    }
+    .cartes-tarifs p{
+        font-size: 16px;
+        padding: 6px 15px;
+        /* border-top: 1px solid rgb(194,194,194); */
+    
+    }
+    .cartes-tarifs a{
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -571,6 +632,21 @@ html {
     .section-tarifs hr{
         width: 150px;
         margin: 20px auto 30px;
+    }
+    .cartes-tarifs h4{
+        font-size: 20px;
+    }
+    .cartes-tarifs span{
+        font-size: 30px;
+    }
+    .cartes-tarifs p{
+        font-size: 14px;
+        padding: 4px 15px;
+        /* border-top: 1px solid rgb(194,194,194); */
+    
+    }
+    .cartes-tarifs a{
+        font-size: 14px;
     }
 }
 
@@ -685,6 +761,21 @@ html {
       
         letter-spacing: 6px;
     }
+    .temoignage{
+        font-size: 24px;
+    }
+    .temoignages-container{
+        
+        padding: 16px;
+        margin: 18px 0;
+        width: 70%;
+    }
+    .parallax h3 {
+        font-size: 45px;  
+        margin-top: 80px;
+        margin-bottom: 30px;  
+      
+    }
 }
 @media screen and (max-width: 576px){
     .parallax h3 {
@@ -694,6 +785,20 @@ html {
         margin-bottom: 60px;
       
         letter-spacing: 6px;
+    }
+    .temoignage{
+        font-size: 18px;
+    }
+    .temoignages-container{
+        padding: 14px;
+        margin: 14px 0;
+        width: 80%;
+    }
+    .parallax h3 {
+        font-size: 35px;  
+        margin-top: 60px;
+        margin-bottom: 20px;  
+      
     }
 }
 
@@ -713,7 +818,7 @@ html {
     margin: 0 auto;
 }
 .etape-contact-content{
-    width: 200px;
+    width: 220px;
 }
 .etape-contact-content h5{
     /* font-family: serif; */
@@ -801,6 +906,16 @@ html {
     .contact-form{
         width: 95%;
     }
+    .etape-contact-content{
+        width: 200px;
+    }
+    .etape-contact-content h5{
+        /* font-family: serif; */
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: #eb3643;
+        text-transform: uppercase;
+    }
 }
 @media screen and (max-width: 575px ){
     .etape-contact-content{
@@ -812,13 +927,43 @@ html {
 
 
 .footer-content{
-    height: 300px;
+    height: auto;
     background-color: #eb3643 ;
 }
 
 .link-bottom-footer li{
     list-style-type: none;
-    mar
+    
+}
+
+.scroll-up small{
+    margin-top: -15px;
+}
+
+
+
+.bandeau-footer-container{
+    width: 60%;
+    background-color: #222222;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.annonce-footer{
+    width: 90%;
+    color: white;
+    
+
+}
+.annonce-footer p{
+   font-style: italic;
+
+}
+.annonce-footer img{
+    width: 300px;
+    height: 100px; 
+    object-fit: contain;
 }
 
 
