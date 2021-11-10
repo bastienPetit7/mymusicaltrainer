@@ -1,0 +1,39 @@
+    
+    
+    <nav class="d-flex">
+
+        <a class="navbar-brand" href="#top"> <img src="{{asset('assets/ressources/logo/LOGO MMT-2.jpg')}}" class="logo-nav" alt=""></a>
+
+        <ul class="liste-nav">
+            <li class="item-nav"> <a href="#aPropos" >Notre vision</a></li>
+            <li class="item-nav"><a href="#entrainement">Services</a></li>
+            <li class="item-nav"><a href="#avantages">Avantages</a></li>
+            <li class="item-nav"><a href="#formule&Tarifs">Formules & Tarifs</a></li>
+            <li class="item-nav"><a href="#contact">Contact</a></li>
+        </ul>
+
+        <img src="{{asset('assets/ressources/logo/menu.svg')}}" alt="logo menu" class="logo-menu">
+    </nav>
+
+
+<script>
+    // Gestion du menu bureger responsive;
+
+const btnMenu = document.querySelector('.logo-menu');
+const menu = document.querySelector('.liste-nav');
+
+btnMenu.addEventListener('click', function(){
+    menu.classList.toggle('active');
+})
+
+
+const allLinks = document.querySelectorAll('.item-nav');
+
+allLinks.forEach(function(item){
+
+    item.addEventListener('click', function(){
+        menu.classList.toggle('active');
+    })
+
+})
+</script>
