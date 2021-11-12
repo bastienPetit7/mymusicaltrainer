@@ -456,30 +456,31 @@
 
             <h2 class="training-title mb-5 mt-4 text-center text-white ">Nous contacter</h2>
         
-            <div class="contact-explaination d-flex justify-content-center mb-5">
+            <div class="contact-explaination d-flex  justify-content-md-center mb-5">
                 <div class="text-white w-100 d-flex justify-content-center flex-wrap justify-content-md-between">
                     
                         <div class="etape-contact-content text-center mb-3">
                             <h5>1. La préparation</h5>
-                            <p class="text-justify">Le « Questionnaire de prise de contact » est à remplir et à nous renvoyer par e-mail.</p>
+                            <p class="text-center">Demande à recevoir ton « Questionnaire de prise de contact ». À remplir et à nous renvoyer par e-mail.</p>
                             
                         </div>
                 
                     
                         <div class="etape-contact-content text-center mb-3 ml-3 ml-md-0">
                             <h5>2. L'Écoute & Échange <br> par visio</h5>
-                            <p class="text-justify">Pour discuter de ta demande, nous convenons avec toi d’un rendez-vous par visio.</p>
-                            <p class="text-justify">La séance Écoute & Échange permet de cadrer le contexte de ta demande, de formuler une proposition adaptée à tes besoins et de bâtir un programme de travail sur-mesure.</p>
+                            <p class="text-center">Pour discuter de ta demande, nous convenons avec toi d’un rendez-vous par visio.</p>
+                            <p class="text-center">La séance Écoute & Échange permet de cadrer le contexte de ta demande, de formuler une proposition adaptée à tes besoins et de bâtir un programme de travail sur-mesure.</p>
                             
                         </div>
                 
                         <div class="etape-contact-content text-center mb-3 ml-3 ml-md-0">
                             <h5>3. L’Action</h5>
-                            <p class="text-justify">Mise en place et validation du planning.</p>
-                            <p class="text-justify">La première séance commence à réception du règlement.</p>
+                            <p class="text-center">Mise en place et validation du planning.</p>
+                            <p class="text-center">La première séance commence à réception du règlement.</p>
                         </div>
                 
                 
+                    <hr class="hr-contact d-block d-md-none ">
                 </div>
             </div>
 
@@ -488,26 +489,43 @@
         
         <div class="row  zone-contact justify-content-center">
 
-            <div class="col-md-6 offset-md-0 col-9 offset-2 p-md-4 p-0 d-flex justify-content-center">
+            <div class="col-md-6 p-md-4 p-0 d-flex justify-content-mb-center w-100 justify-content-center ">
                 <!-- Coordonnés de l'entreprise -->
-                <div class="contact-content text-white mb-5 mb-md-0">
+                <div class=" contact-content text-white mb-5 mb-md-0">
+                    
 
-                    <h3 class="text-uppercase ">Dimitry Therese</h3>
-                    <h5 class="text-uppercase ">Responsable du développement</h5><br>
-                    <p>92 route de Grasse <br> 06220, Vallauris</p>
-                    <p>Tél: +33 (0) 6 59 33 10 76</p>
-                    <p>Email : contact@mymusicaltrainer.com</p>
-                    <div class="rs-contact">
+                    <div class="row  d-flex justify-content-center justify-content-sm-between ">
+
+                        <div class="col-12 g-0 col-sm-4 offset-sm-0  col-md-12">
+                            <h5 class="text-uppercase  ">Service <br> particulier</h5>
+                            <div>
+                                <p>Email :</p> 
+                                <p class="contact-mail"><a href="mailto:contact@mymusicaltrainer.com" class="text-white"> contact@mymusicaltrainer.com </a> </p><br>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 d-none d-sm-block"></div>
+
+                        <div class="col-12  col-sm-4 offset-sm-0 col-md-12">
+                            <h5 class="text-uppercase ">Service <br> professionnel</h5>
+                            <p>Email :</p> 
+                            <p class="contact-mail"> <a href="mailto:pro@mymusicaltrainer.com" class="text-white">pro@mymusicaltrainer.com</a> </p>
+                        </div>
+                    
+                    
+                    </div>
+                    
+
+                    <div class="rs-contact d-none d-md-block">
                         <ul class="rs-list d-flex">
                             <li>
                                 <a href="">
                                     
-                                    <i class="fab fa-facebook-f text-white"></i>
+                                    <i class="fab fa-facebook-f "></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="">
-                                    <i class="fab fa-instagram text-white"></i>
+                                    <i class="fab fa-instagram "></i>
                                 </a>
                             </li>
                             
@@ -531,7 +549,25 @@
                         
                             
                         </div>
-                        <div class="d-flex justify-content-end">
+                        <div class="d-flex rs-container-md justify-content-between">
+
+                            <div class="rs-contact d-block d-md-none">
+                                <ul class="rs-list d-flex">
+                                    <li>
+                                        <a href="">
+                                            
+                                            <i class="fab fa-facebook-f "></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fab fa-instagram "></i>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+
                             <button type="submit" class="btn btn-danger button-sub-contact-form px-5" >Envoyer</button>
                         </div>
                     {{form_end(form)}}

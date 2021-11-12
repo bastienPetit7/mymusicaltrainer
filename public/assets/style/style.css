@@ -988,14 +988,35 @@ nav {
     color: #eb3643;
     text-transform: uppercase;
 }
+.hr-contact{
+    background-color:#464545;
+    height: 0.3px;
+    width: 70%;
+    color: white;
+}
 
-.contact-content h3{
+.contact-content{
+    margin-top: 7px;
+}
+
+.contact-content h5{
     font-family: 'Anton', sans-serif;
     letter-spacing: 3px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
 }
 .contact-content p{
     font-size: 14px;
+    margin-top: -12px;
+}
+
+.service-pro{
+    margin-top: -10px;
+}
+
+.rs-contact{
+    margin-top: -6px;
+    
 }
 
 .rs-list{
@@ -1008,6 +1029,7 @@ nav {
 
 .fab{
     font-size: 28px;
+    color: #f1f1f1;
 }
 .zone-contact{
     width: 80%;
@@ -1065,21 +1087,55 @@ nav {
 }
 
 
-@media screen and (max-width: 775px ){
+@media screen and (max-width: 821px ){
     .contact-form{
         width: 95%;
     }
     .etape-contact-content{
-        width: 200px;
+        width: 170px;
     }
     .etape-contact-content h5{
         /* font-family: serif; */
         font-size: 16px;
         margin-bottom: 20px;
-        color: #eb3643;
-        text-transform: uppercase;
+        
+    }
+    .etape-contact-content p{
+        font-size: 13px;
+    }
+    .rs-contact{
+        margin-top: 10px;
+
     }
 }
+
+@media screen and (max-width: 775px ){
+    .service-part{
+        border-top: 1px solid #464545;
+        border-left: 1px solid #464545;
+
+        padding: 32px;
+        margin-top: -32px;
+        margin-left: -32px;
+
+    }
+    .rs-container-md{
+        height: 40px;
+    }
+    .rs-contact{
+        margin-top: -6px;
+        
+    }
+
+    .rs-list{
+        margin-top: 12px
+    }
+    .rs-list li{
+        list-style: none;
+        margin-right: 22px;
+    }
+
+} 
 @media screen and (max-width: 575px ){
     .etape-contact-content{
         width: 250px;
