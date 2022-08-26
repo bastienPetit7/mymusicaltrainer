@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6dd92949-6ed3-4d52-a4ca-616688b4d5af" name="mymusicaltrainer">
+        <fileTransfer rootFolder="/home/exdewvkh/public_html/mymusicaltrainer" accessType="SFTP" host="node150-eu.n0c.com" port="5022" sshConfigId="4aae9326-507d-4c1c-9ed7-7f935cc13b10" sshConfig="exdewvkh@node150-eu.n0c.com:5022 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
